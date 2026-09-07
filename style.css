@@ -1468,6 +1468,12 @@ main,
   object-fit: cover;
   object-position: top center;
 }
+.gal figure.fit button.shot img {
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: #fff;
+  padding: 10px;
+}
 .gal figure.tall button.shot img {
   aspect-ratio: 3 / 4;
   object-fit: cover;
@@ -1670,16 +1676,21 @@ main,
   color: var(--color-text-muted);
 }
 .cert__stats {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   justify-content: center;
-  gap: var(--space-3) var(--space-8);
+  gap: var(--space-5) var(--space-4);
   margin-top: var(--space-8);
   padding-top: var(--space-6);
   border-top: var(--rule) solid var(--color-divider);
 }
 .cert__stat {
-  min-width: 8.5rem;
+  min-width: 0;
+}
+@media (max-width: 720px) {
+  .cert__stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .cert__stat b {
   display: block;
