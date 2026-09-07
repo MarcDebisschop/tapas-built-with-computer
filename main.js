@@ -182,7 +182,7 @@
     if (lastFocus) lastFocus.focus();
   }
 
-  document.querySelectorAll('.gal button.shot').forEach(function (btn) {
+  document.querySelectorAll('button.shot').forEach(function (btn) {
     btn.addEventListener('click', function () {
       open(btn);
     });

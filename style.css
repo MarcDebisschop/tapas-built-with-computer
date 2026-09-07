@@ -1320,7 +1320,7 @@ main,
 }
 .note__card {
   display: grid;
-  grid-template-columns: 128px 1fr;
+  grid-template-columns: 172px 1fr;
   gap: var(--space-8);
   align-items: start;
   background: var(--color-surface-2);
@@ -1333,21 +1333,75 @@ main,
 .note__photo {
   text-align: center;
 }
-.note__photo img {
-  width: 112px;
-  height: 112px;
-  border-radius: var(--radius-full);
-  object-fit: cover;
-  border: 3px solid var(--color-primary);
+.frame {
   display: block;
-  margin: 0 auto var(--space-3);
+  width: 100%;
+  padding: 7px;
+  margin: 0 0 var(--space-3);
+  border: 0;
+  cursor: zoom-in;
+  background: linear-gradient(150deg, #d9b779 0%, #8d6a33 38%, #e6cd9c 62%, #7c5b2b 100%);
+  border-radius: 3px;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.5) inset,
+    0 10px 24px rgba(17, 20, 24, 0.28);
 }
-.note__photo span {
+.frame > span {
   display: block;
-  font-size: var(--text-xs);
-  color: var(--color-text-faint);
-  line-height: 1.35;
-  letter-spacing: 0.02em;
+  position: relative;
+  overflow: hidden;
+  background: #241a12;
+  box-shadow: 0 0 0 2px #2b2016 inset;
+}
+.frame img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 18%;
+  transition: opacity 420ms var(--ease-out, ease);
+}
+.frame__real {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+.frame:hover .frame__real,
+.frame:focus-visible .frame__real {
+  opacity: 1;
+}
+.frame:hover .frame__paint,
+.frame:focus-visible .frame__paint {
+  opacity: 0.12;
+}
+.plaque {
+  display: block;
+  font-size: 10.5px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: 6px 4px 0;
+  border-top: var(--rule) solid var(--color-border);
+}
+.plaque b {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  letter-spacing: 0.01em;
+  text-transform: none;
+  color: var(--color-text);
+}
+.plaque i {
+  font-style: normal;
+  opacity: 0.65;
+}
+@media (max-width: 700px) {
+  .note__photo {
+    max-width: 208px;
+    margin: 0 auto var(--space-2);
+  }
 }
 .note__body p {
   font-size: var(--text-base);
@@ -1378,17 +1432,6 @@ main,
   .note__card {
     grid-template-columns: 1fr;
     padding: var(--space-6);
-  }
-  .note__photo {
-    display: flex;
-    align-items: center;
-    gap: var(--space-4);
-    text-align: left;
-  }
-  .note__photo img {
-    width: 76px;
-    height: 76px;
-    margin: 0;
   }
 }
 
