@@ -352,7 +352,7 @@ h2.section-title {
   color: var(--color-text);
 }
 .brand img {
-  height: 1.5rem;
+  height: 1.85rem;
   width: auto;
 }
 .brand__logo--dark {
@@ -444,9 +444,9 @@ h2.section-title {
 
 .hero__grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-  gap: clamp(var(--space-8), 5vw, var(--space-20));
-  align-items: end;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: clamp(var(--space-8), 5vw, var(--space-16));
+  align-items: center;
 }
 
 @media (max-width: 940px) {
@@ -466,8 +466,8 @@ h2.section-title {
 .hero h1 {
   font-size: var(--text-3xl);
   margin-top: var(--space-6);
-  max-width: 20ch;
-  letter-spacing: -0.03em;
+  max-width: 17ch;
+  letter-spacing: -0.018em;
 }
 
 .hero h1 em {
@@ -639,6 +639,7 @@ h2.section-title {
   overflow: hidden;
 }
 .bars__fill {
+  display: block;
   height: 100%;
   width: 0;
   background: var(--color-primary);
@@ -686,12 +687,18 @@ h2.section-title {
   color: var(--color-primary);
   font-variant-numeric: tabular-nums lining-nums;
 }
-.attention__figure span {
+.attention__figure b span {
+  font: inherit;
+  color: inherit;
+  display: inline;
+  margin: 0;
+}
+.attention__note {
   display: block;
-  margin-top: var(--space-4);
+  margin-top: var(--space-5);
   font-size: var(--text-base);
   color: var(--color-text-muted);
-  max-width: 26ch;
+  max-width: 28ch;
   line-height: 1.5;
 }
 
@@ -1250,4 +1257,16 @@ table.data th.num {
 .reveal.is-in {
   opacity: 1;
   transform: none;
+}
+
+/* --- mobile: keep the thread table readable without sideways scrolling --- */
+@media (max-width: 620px) {
+  .data th:nth-child(2),
+  .data td:nth-child(2) {
+    display: none;
+  }
+  table.data {
+    min-width: 0;
+    width: 100%;
+  }
 }
