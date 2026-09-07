@@ -19,6 +19,16 @@
   <body>
     <div class="progress" id="progress" aria-hidden="true"></div>
 
+    <img class="pagemark" src="assets/g/earhart.png" alt="" aria-hidden="true" />
+
+    <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Enlarged image">
+      <button class="lb__close" id="lbClose" type="button" aria-label="Close">&#10005;</button>
+      <div class="lb__inner">
+        <img id="lbImg" src="" alt="" />
+        <p class="lb__cap" id="lbCap"></p>
+      </div>
+    </div>
+
     <a href="#numbers" class="sr-only">Skip to content</a>
 
     <header class="header" id="header">
@@ -39,8 +49,10 @@
           <a href="#numbers">Numbers</a>
           <a href="#origin">Origin</a>
           <a href="#platform">Platform</a>
-          <a href="#evidence">Evidence</a>
-          <a href="#stories">Stories</a>
+          <a href="#lounge">Lounge</a>
+          <a href="#look-reports">Reports</a>
+          <a href="#look-stories">Stories</a>
+          <a href="#watermark">Watermark</a>
           <a href="#skills">Skills</a>
           <a href="#limits">Limits</a>
         </nav>
@@ -81,6 +93,46 @@
               >days from the first platform briefing on 12 June to a working platform, a tested
               instrument family and a released brand.</span
             >
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= NOTE TO BRENNAN ============================= -->
+      <section class="note">
+        <div class="wrap wrap--default">
+          <div class="note__card">
+            <div class="note__photo">
+              <img src="assets/g/brennan.jpg" alt="Brennan Keller, Perplexity" />
+              <span>Brennan Keller<br />Commercial Business Lead<br />Perplexity</span>
+            </div>
+            <div class="note__body">
+              <p class="note__quote">
+                “You've been one of my highest usage Perplexity accounts for three months
+                straight… people have genuinely unique use cases that I love learning about.”
+              </p>
+              <p>
+                Brennan — you sent one email and accidentally commissioned an audit. I could have
+                answered in a paragraph. Instead I asked Computer to open the archive, count what
+                is actually in there, and refuse to write down anything it could not point at.
+                What follows is the result: 1,385 files, 26 threads, 87 days, and a fair number of
+                things I would not have believed possible in June.
+              </p>
+              <p>
+                Fair warning about the “highest usage” part. It is not that I type quickly. It is
+                that a talent instrument needs a scoring engine, and a scoring engine needs
+                validation, and validation needs a report, and a report needs a house style, and
+                somewhere around there a children's book series appeared. One thing genuinely
+                leads to the next.
+              </p>
+              <p>
+                So: plenty of pictures below. Click any of them — they open full size. Everything
+                you see was produced in this account, and the paper trail is in the archive.
+              </p>
+              <p class="note__sign">
+                Marc Debisschop · organisational psychologist · Wortegem, Flanders ·
+                <em>Talent runs on Passion</em>
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -589,6 +641,150 @@
         </div>
       </section>
 
+      <!-- ============================= LOOK · PLATFORM ============================= -->
+      <section id="look-platform" class="look look--cool">
+        <div class="wrap">
+          <p class="eyebrow">Look · 01</p>
+          <h2>The platform, on screen</h2>
+          <p class="look__lead">
+            Not mock-ups. These are screens from the running build — the participant route, the
+            organisation dashboard, the licence-gated instruments and the English positioning page
+            written for exactly this kind of conversation. Click to open any of them full size.
+          </p>
+          <div class="gal">
+            <figure class="w8 crop">
+              <button class="shot" type="button" data-cap="Platform entry · dark theme with the compass rose, and one line of Dutch: “Zie mensen zoals ze werkelijk zijn” — see people as they really are.">
+                <img src="assets/g/plat-home.jpg" alt="TaPas platform home screen with a compass rose on a dark background" loading="lazy" />
+              </button>
+              <figcaption>
+                <b>Entry screen</b>Compass rose, one promise: see people as they really are.
+              </figcaption>
+            </figure>
+            <figure class="w4 crop">
+              <button class="shot" type="button" data-cap="Organisation dashboard · aggregated talent and energy scores per participant, with the licence state visible.">
+                <img src="assets/g/plat-dash.jpg" alt="Organisation dashboard with per-participant scores" loading="lazy" />
+              </button>
+              <figcaption><b>Organisation dashboard</b>Scores, cohorts, licence state.</figcaption>
+            </figure>
+            <figure class="crop">
+              <button class="shot" type="button" data-cap="The route for coaches and organisations — instrument selection, invitations, seats.">
+                <img src="assets/g/plat-begeleiders.jpg" alt="Screen for coaches and organisations" loading="lazy" />
+              </button>
+              <figcaption><b>For coaches</b>Invite, assign instruments, follow up.</figcaption>
+            </figure>
+            <figure class="crop">
+              <button class="shot" type="button" data-cap="The participant route — the questionnaire flow that ends in a generated PDF report.">
+                <img src="assets/g/plat-deelnemers.jpg" alt="Screen for participants" loading="lazy" />
+              </button>
+              <figcaption><b>For participants</b>Questionnaire to finished report.</figcaption>
+            </figure>
+            <figure class="crop">
+              <button class="shot" type="button" data-cap="Light theme — the same platform, card-based navigation. Both themes were built, not one.">
+                <img src="assets/g/plat-cards.jpg" alt="Light theme card navigation" loading="lazy" />
+              </button>
+              <figcaption><b>Light theme</b>Both themes shipped, not one.</figcaption>
+            </figure>
+            <figure class="w6 crop">
+              <button class="shot" type="button" data-cap="Tapas CORE, in English: “the talent operating system for passion-driven performance.” Written for international conversations.">
+                <img src="assets/g/core-en.jpg" alt="English positioning page for Tapas CORE" loading="lazy" />
+              </button>
+              <figcaption>
+                <b>Tapas CORE, in English</b>“The talent operating system for passion-driven
+                performance.”
+              </figcaption>
+            </figure>
+            <figure class="w3 crop">
+              <button class="shot" type="button" data-cap="The Temperament Wheel — a separate live app at temperamentenwiel.pplx.app, built to make the model tangible in a session.">
+                <img src="assets/g/wheel.jpg" alt="The colourful Temperament Wheel" loading="lazy" />
+              </button>
+              <figcaption><b>Temperament Wheel</b>Its own live app.</figcaption>
+            </figure>
+            <figure class="w3 crop">
+              <button class="shot" type="button" data-cap="The Academy observatory — the learning environment for practitioners who license the instruments.">
+                <img src="assets/g/observatorium.jpg" alt="Academy observatory illustration" loading="lazy" />
+              </button>
+              <figcaption><b>The Academy</b>Where practitioners get certified.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= LOOK · THE LOUNGE ============================= -->
+      <section id="lounge" class="look">
+        <div class="wrap">
+          <p class="eyebrow">Look · 02</p>
+          <h2>The Lounge — a building you can walk through</h2>
+          <p class="look__lead">
+            An assessment platform normally looks like a form. The Lounge is the opposite bet: the
+            product is a place. You arrive at reception, sit down in the Talent Café, retreat to the
+            quiet room, work in the workshop, and read on the terrace. Each room is a real route in
+            the build with its own content — and every interior was generated in this account.
+          </p>
+          <div class="gal">
+            <figure class="w6 crop">
+              <button class="shot" type="button" data-cap="Reception — the arrival room of the Lounge. Warm, deliberately un-clinical for a platform that measures people.">
+                <img src="assets/g/lounge-onthaal.jpg" alt="Warm reception interior of the Lounge" loading="lazy" />
+              </button>
+              <figcaption><b>Reception</b>You arrive somewhere, not on a form.</figcaption>
+            </figure>
+            <figure class="w6 crop">
+              <button class="shot" type="button" data-cap="The Talent Café — where talent conversations happen. Sea view, low chairs, no boardroom.">
+                <img src="assets/g/lounge-talentencafe.jpg" alt="Talent Café interior with sea view" loading="lazy" />
+              </button>
+              <figcaption><b>Talent Café</b>The conversation room.</figcaption>
+            </figure>
+            <figure class="crop">
+              <button class="shot" type="button" data-cap="The study — reading, reports, theory.">
+                <img src="assets/g/lounge-studiekamer.jpg" alt="Study interior" loading="lazy" />
+              </button>
+              <figcaption><b>The study</b>Reports and theory.</figcaption>
+            </figure>
+            <figure class="crop">
+              <button class="shot" type="button" data-cap="The quiet room — built in on purpose, because energy management is half the model.">
+                <img src="assets/g/lounge-stiltekamer.jpg" alt="Quiet room interior" loading="lazy" />
+              </button>
+              <figcaption><b>The quiet room</b>Energy is half the model.</figcaption>
+            </figure>
+            <figure class="crop">
+              <button class="shot" type="button" data-cap="The workshop — exercises, team sessions, materials.">
+                <img src="assets/g/lounge-werkplaats.jpg" alt="Workshop interior" loading="lazy" />
+              </button>
+              <figcaption><b>The workshop</b>Exercises and team sessions.</figcaption>
+            </figure>
+            <figure class="w4 crop">
+              <button class="shot" type="button" data-cap="The terrace at dusk — the closing room of the Lounge.">
+                <img src="assets/g/lounge-terras.jpg" alt="Terrace at dusk" loading="lazy" />
+              </button>
+              <figcaption><b>The terrace</b>Where a session ends.</figcaption>
+            </figure>
+            <figure class="w4 crop">
+              <button class="shot" type="button" data-cap="Tapas Island — the board game version of the model, designed as a physical product with box and board.">
+                <img src="assets/g/island-box.jpg" alt="Tapas Island board game box" loading="lazy" />
+              </button>
+              <figcaption><b>Tapas Island</b>The model as a board game.</figcaption>
+            </figure>
+            <figure class="w4 crop">
+              <button class="shot" type="button" data-cap="The island map — the shared geography behind the platform, the books and the comics. One world, reused everywhere.">
+                <img src="assets/g/island-map.jpg" alt="Illustrated map of Tapas Island" loading="lazy" />
+              </button>
+              <figcaption><b>One shared world</b>The same map under platform, books and comics.</figcaption>
+            </figure>
+            <figure class="w6 crop">
+              <button class="shot" type="button" data-cap="The Jester card — the deliberate disruptor in the method, given its own object and its own gold emblem.">
+                <img src="assets/g/jester-card.jpg" alt="Gold Jester card" loading="lazy" />
+              </button>
+              <figcaption><b>The Jester</b>The disruptor got its own object.</figcaption>
+            </figure>
+            <figure class="w6 crop">
+              <button class="shot" type="button" data-cap="The TIP card — the small physical artefact handed out in sessions. Digital product, physical residue.">
+                <img src="assets/g/tip-card.jpg" alt="Black and gold TIP card" loading="lazy" />
+              </button>
+              <figcaption><b>The TIP card</b>Digital product, physical residue.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
       <!-- ============================= INSTRUMENTS ============================= -->
       <section id="instruments" class="ink">
         <div class="wrap">
@@ -663,6 +859,70 @@
                 no photos, no reports.
               </p>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= LOOK · REPORTS ============================= -->
+      <section id="look-reports" class="look look--cool">
+        <div class="wrap">
+          <p class="eyebrow">Look · 03</p>
+          <h2>What comes out the other end</h2>
+          <p class="look__lead">
+            Every instrument ends in a document a human being has to be able to read alone, without
+            a consultant in the room. These are real pages from generated reports — a business
+            profile, a study compass for a 17-year-old, a French team energy profile, a children's
+            edition, and the factor-analysis report that checks whether any of it holds up.
+          </p>
+          <div class="gal">
+            <figure class="w3 tall">
+              <button class="shot" type="button" data-cap="Business Profile — cover page of the professional talent report, generated by the deterministic report engine.">
+                <img src="assets/g/rep-t4p-cover.jpg" alt="Cover of the Business Profile report" loading="lazy" />
+              </button>
+              <figcaption><b>Business Profile</b>Cover page.</figcaption>
+            </figure>
+            <figure class="w3 tall">
+              <button class="shot" type="button" data-cap="Score page — talent foci with numeric scores and interpretation, generated rather than written by hand.">
+                <img src="assets/g/rep-t4p-scores.jpg" alt="Score page with talent scores" loading="lazy" />
+              </button>
+              <figcaption><b>Scores</b>Deterministic, not improvised.</figcaption>
+            </figure>
+            <figure class="w3 tall">
+              <button class="shot" type="button" data-cap="Study Compass — the orienting study-choice report for students in their final school years.">
+                <img src="assets/g/rep-t4s-cover.jpg" alt="Cover of the Study Compass report" loading="lazy" />
+              </button>
+              <figcaption><b>Study Compass</b>For 17-year-olds facing a choice.</figcaption>
+            </figure>
+            <figure class="w3 tall">
+              <button class="shot" type="button" data-cap="Inside the Study Compass — bar-scored insight pages in language a teenager will actually read.">
+                <img src="assets/g/rep-t4s-inner.jpg" alt="Inner page of the Study Compass" loading="lazy" />
+              </button>
+              <figcaption><b>Inside</b>Written for the reader, not the expert.</figcaption>
+            </figure>
+            <figure class="w3 tall">
+              <button class="shot" type="button" data-cap="Team energy profile in French — the same engine, another language, another audience.">
+                <img src="assets/g/rep-fr-wheel.jpg" alt="French team energy profile with a colour mandala" loading="lazy" />
+              </button>
+              <figcaption><b>In French</b>Same engine, another language.</figcaption>
+            </figure>
+            <figure class="w3 tall">
+              <button class="shot" type="button" data-cap="The children's edition — “a magnifying glass for my talents and passions”. Same model, age-appropriate voice.">
+                <img src="assets/g/rep-kids.jpg" alt="Colourful children's edition cover" loading="lazy" />
+              </button>
+              <figcaption><b>Children's edition</b>Same model, other voice.</figcaption>
+            </figure>
+            <figure class="w3 tall">
+              <button class="shot" type="button" data-cap="Factor-analysis validation report — reliability and factor loadings. The unglamorous document that decides whether the rest is allowed to exist.">
+                <img src="assets/g/rep-validation.jpg" alt="Chart of factor loadings" loading="lazy" />
+              </button>
+              <figcaption><b>Validation</b>Factor loadings and reliability.</figcaption>
+            </figure>
+            <figure class="w3 tall">
+              <button class="shot" type="button" data-cap="The Insight Centre demo — the aggregate view for organisations.">
+                <img src="assets/g/rep-insight.jpg" alt="Dark teal cover of the Insight Centre demo" loading="lazy" />
+              </button>
+              <figcaption><b>Insight Centre</b>The aggregate view.</figcaption>
+            </figure>
           </div>
         </div>
       </section>
@@ -858,6 +1118,76 @@
         </div>
       </section>
 
+      <!-- ============================= LOOK · STORIES ============================= -->
+      <section id="look-stories" class="look">
+        <div class="wrap">
+          <p class="eyebrow">Look · 04</p>
+          <h2>Three comic albums and a shelf of read-aloud books</h2>
+          <p class="look__lead">
+            The same talent model, aimed at nine-year-olds. Three full comic albums of 58 pages each,
+            drawn panel by panel through a scripted production line with seven gates — script,
+            panels, lettering, binding, inspection — so a change to one page never invalidates the
+            album. Plus read-aloud books around Tappie, the guide character.
+          </p>
+          <div class="gal">
+            <figure class="w4 tall">
+              <button class="shot" type="button" data-cap="Album 1 — “Amelia Earhart en het geheim van Tapas Island”. 58 pages, produced through the scripted comic pipeline.">
+                <img src="assets/g/comic-1-cover.jpg" alt="Comic album one cover with an aircraft over an island" loading="lazy" />
+              </button>
+              <figcaption><b>Album 1</b>Amelia Earhart and the secret of Tapas Island.</figcaption>
+            </figure>
+            <figure class="w4 tall">
+              <button class="shot" type="button" data-cap="Album 2 — “De kaart van ieders talent”. The map of everyone's talent.">
+                <img src="assets/g/comic-2-cover.jpg" alt="Comic album two cover" loading="lazy" />
+              </button>
+              <figcaption><b>Album 2</b>The map of everyone's talent.</figcaption>
+            </figure>
+            <figure class="w4 tall">
+              <button class="shot" type="button" data-cap="Album 3 — “De energieverslinder”. The energy-eater: the model's energy layer, told as a story.">
+                <img src="assets/g/comic-3-cover.jpg" alt="Comic album three cover with a tower" loading="lazy" />
+              </button>
+              <figcaption><b>Album 3</b>The energy-eater.</figcaption>
+            </figure>
+            <figure class="w6">
+              <button class="shot" type="button" data-cap="Interior page, album 1 — panels, speech balloons and sound effects, all placed by the pipeline against a canon check.">
+                <img src="assets/g/comic-1-page.jpg" alt="Interior comic page with aircraft panels" loading="lazy" />
+              </button>
+              <figcaption><b>Inside album 1</b>Panels and lettering, machine-placed, canon-checked.</figcaption>
+            </figure>
+            <figure class="w6">
+              <button class="shot" type="button" data-cap="Interior page, album 3 — the lettering rules are part of the pipeline, not an afterthought.">
+                <img src="assets/g/comic-3-page.jpg" alt="Interior comic page with several panels" loading="lazy" />
+              </button>
+              <figcaption><b>Inside album 3</b>Lettering rules live in the pipeline.</figcaption>
+            </figure>
+            <figure class="w3 crop">
+              <button class="shot" type="button" data-cap="Read-aloud book — “De Figuren op het Tweede Eiland”. Deliberately inclusive casting, including a wheelchair user, without making it the subject.">
+                <img src="assets/g/book-island-1.jpg" alt="Illustrated book page with a diverse group of children" loading="lazy" />
+              </button>
+              <figcaption><b>The Second Island</b>Inclusive casting, quietly.</figcaption>
+            </figure>
+            <figure class="w3 crop">
+              <button class="shot" type="button" data-cap="Same book, later spread — golden forest, two children, one lesson about difference.">
+                <img src="assets/g/book-island-2.jpg" alt="Illustrated book page in a golden forest" loading="lazy" />
+              </button>
+              <figcaption><b>Same book, later</b>One lesson per spread.</figcaption>
+            </figure>
+            <figure class="w3 crop">
+              <button class="shot" type="button" data-cap="“Het Motorenland — Gas en Rem”: acceleration and braking as a children's story about drive and self-control.">
+                <img src="assets/g/book-motor.jpg" alt="Illustrated night scene with a glowing car" loading="lazy" />
+              </button>
+              <figcaption><b>Gas and brake</b>Drive and self-control, age nine.</figcaption>
+            </figure>
+            <figure class="w3 crop">
+              <button class="shot" type="button" data-cap="“Tappie en de Fluisterende Uitnodiging” — the compass turns up in a bedroom. The invitation that starts the series.">
+                <img src="assets/g/book-whisper.jpg" alt="Illustrated bedroom scene with a compass" loading="lazy" />
+              </button>
+              <figcaption><b>The whispering invitation</b>Where the series starts.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
       <!-- ============================= BRAND ============================= -->
       <section id="brand" class="section-rule">
         <div class="wrap">
@@ -940,6 +1270,121 @@
               <img src="assets/core-17.jpg" alt="Scaling slide from the Tapas CORE deck" />
               <figcaption>Strategic deck — scaling</figcaption>
             </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= LOOK · BRAND ============================= -->
+      <section id="look-brand" class="look look--warm">
+        <div class="wrap">
+          <p class="eyebrow">Look · 05</p>
+          <h2>A brand that had to survive a boardroom and a playground</h2>
+          <p class="look__lead">
+            One identity has to work on an investor deck, a school worksheet, a street sign and a
+            phone icon. So it was tested on all of them — logo studies, a pictogram set, signage,
+            stationery, an app icon in a hand, and film stills for the launch material. All
+            generated in this account, none of it stock.
+          </p>
+          <div class="gal">
+            <figure class="w4 crop">
+              <button class="shot" type="button" data-cap="Logo study — the TaPasCity skyline, where each tower is a person. One of two directions; the decision is still deliberately open.">
+                <img src="assets/g/brand-towers.jpg" alt="Colourful TaPasCity towers logo" loading="lazy" />
+              </button>
+              <figcaption><b>Logo, direction B</b>Every tower is a person.</figcaption>
+            </figure>
+            <figure class="w4 crop">
+              <button class="shot" type="button" data-cap="Pictogram set — the visual vocabulary that keeps reports, platform and school material recognisably one family.">
+                <img src="assets/g/brand-picto.jpg" alt="Grid of TaPasCity pictograms" loading="lazy" />
+              </button>
+              <figcaption><b>Pictogram set</b>One visual vocabulary everywhere.</figcaption>
+            </figure>
+            <figure class="w4 crop">
+              <button class="shot" type="button" data-cap="Signage test at dusk — does the mark still read at thirty metres in bad light?">
+                <img src="assets/g/brand-street.jpg" alt="TaPasCity signage on a building at dusk" loading="lazy" />
+              </button>
+              <figcaption><b>Signage test</b>Does it read at thirty metres?</figcaption>
+            </figure>
+            <figure class="crop">
+              <button class="shot" type="button" data-cap="App icon in a hand — the same mark at 60 pixels, which is where most identities fall apart.">
+                <img src="assets/g/brand-phone.jpg" alt="App icon shown on a phone held in a hand" loading="lazy" />
+              </button>
+              <figcaption><b>At 60 pixels</b>Where identities usually break.</figcaption>
+            </figure>
+            <figure class="crop">
+              <button class="shot" type="button" data-cap="Stationery — cards and letterhead, because a licensed practitioner network needs paper too.">
+                <img src="assets/g/brand-paper.jpg" alt="Stationery set with cards and letterhead" loading="lazy" />
+              </button>
+              <figcaption><b>Stationery</b>A practitioner network needs paper.</figcaption>
+            </figure>
+            <figure class="crop">
+              <button class="shot" type="button" data-cap="Graffiti wall — “Talent &amp; Passie”, the teen edition of the same idea. Different register, same model.">
+                <img src="assets/g/graffiti.jpg" alt="Graffiti wall reading Talent and Passie" loading="lazy" />
+              </button>
+              <figcaption><b>Teen register</b>Same model, other voice.</figcaption>
+            </figure>
+            <figure class="w6 crop">
+              <button class="shot" type="button" data-cap="Film stills — a grid from the launch film material generated for Tapas CORE.">
+                <img src="assets/g/core-film.jpg" alt="Grid of film stills" loading="lazy" />
+              </button>
+              <figcaption><b>Film material</b>Stills from the launch films.</figcaption>
+            </figure>
+            <figure class="w6 crop">
+              <button class="shot" type="button" data-cap="Boardroom still — the same story told for an executive audience.">
+                <img src="assets/g/core-board.jpg" alt="Boardroom film still" loading="lazy" />
+              </button>
+              <figcaption><b>Boardroom cut</b>The executive version of the story.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= WATERMARK ============================= -->
+      <section id="watermark" class="ink">
+        <div class="wrap">
+          <p class="eyebrow">The watermark</p>
+          <h2>The aircraft you can just about see behind this page</h2>
+          <div class="mark">
+            <div>
+              <p class="prose">
+                It is Amelia Earhart's Lockheed Vega. She opens the first comic album, she is the
+                reason the platform has a compass instead of a progress bar, and her aircraft is the
+                watermark sitting faintly behind every screen of the TaPas platform — and behind
+                this page, which is why it is here.
+              </p>
+              <p class="prose" style="margin-top: 1rem">
+                It is also the strictest rule in the codebase. When organisations were allowed to
+                brand their own portal — own logo, own background, own quote — one line was
+                non-negotiable, written exactly like this:
+              </p>
+              <p class="mark__rule">
+                “Ons watermerk (vliegtuigje van Amelia Earhart) mag nooit gebruikt worden in een
+                andere ‘organisatie’. Dat is een no go.”<br />
+                <span style="color: #8d9195">— brief, 26 July 2026</span>
+              </p>
+              <p class="prose" style="margin-top: 1.25rem">
+                It did not become a guideline in a PDF. It was compiled into a pure function in
+                <code>shared/branding.ts</code> so no component can route around it: at organisation
+                scope <code>toonEarhart = false</code>, and
+                <code>.organisatie-branding body::after { display: none !important }</code> switches
+                the aircraft off even when the organisation set no background of its own — “when in
+                doubt, do not show it”. Only TaPasCity itself keeps the watermark, and there is an
+                explicit unit test on exactly that behaviour.
+              </p>
+              <p class="prose" style="margin-top: 1.25rem; color: var(--color-ink-muted)">
+                That is the part I did not expect from working this way: a sentence typed in
+                frustration on a Sunday ends up as a tested invariant. A brand rule stopped being a
+                promise and became a failing test if anyone breaks it.
+              </p>
+            </div>
+            <div class="mark__plane">
+              <img src="assets/g/earhart.png" alt="Line render of Amelia Earhart's Lockheed Vega, the TaPas watermark" loading="lazy" />
+              <p style="margin-top: 1rem; font-size: 0.8125rem; color: #9a9d9f; line-height: 1.5">
+                <b style="color: #dfdcd6">earhart-vega-watermark.png</b><br />
+                Shipped in the platform build at
+                <code>client/public/img/</code>. Used here, on this page, for the same reason it
+                exists there.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -1151,6 +1596,60 @@
         </div>
       </section>
 
+      <!-- ============================= CERTIFICATE ============================= -->
+      <section id="ambassador" class="cert section-rule">
+        <div class="wrap wrap--default">
+          <div class="cert__card">
+            <p class="cert__eyebrow">Self-issued · unsolicited · non-transferable</p>
+            <h2 class="cert__title">Certificate of Addicted Ambassadorship</h2>
+            <p class="cert__name">awarded to Marc Debisschop, Wortegem, Flanders</p>
+            <p class="cert__body">
+              For 115 hours of measured hands-on time across 90 days, distributed over 292 working
+              blocks, 48 of which fell on days he had not planned to work, 21% of them at the
+              weekend — and for turning that into a live platform, seven instruments, three comic
+              albums, six read-aloud books, six custom skills and one brand system.
+              <br /><br />
+              <strong>Diagnosis:</strong> addicted. <strong>Prognosis:</strong> ambassador.
+              <strong>Treatment:</strong> none attempted.
+            </p>
+            <div class="cert__stats">
+              <div class="cert__stat"><b>115 h</b><span>measured hands-on time</span></div>
+              <div class="cert__stat"><b>2.4 h</b><span>per active day</span></div>
+              <div class="cert__stat"><b>1,385</b><span>assets produced</span></div>
+              <div class="cert__stat"><b>11.9</b><span>artefacts per hour</span></div>
+              <div class="cert__stat"><b>87</b><span>days, briefing to build</span></div>
+            </div>
+            <div class="cert__sign">
+              <div class="cert__party">
+                <div class="stampbox">
+                  <img src="assets/g/px-mark.png" alt="Perplexity" />
+                </div>
+                <div>
+                  <b>Perplexity Computer</b>
+                  <span>Co-builder. Present for all 292 blocks. Never once asked for a break.</span>
+                </div>
+              </div>
+              <div class="cert__party">
+                <img class="face" src="assets/g/brennan.jpg" alt="Brennan Keller" />
+                <div>
+                  <b>Brennan Keller</b>
+                  <span>
+                    Chief Instigator. Sent one email. Is hereby held partly responsible for
+                    everything above.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <p class="cert__fine">
+              The 115-hour figure is modelled, not logged: it is reconstructed from the UTC
+              timestamps of 893 prompts using a 30-minute session threshold and a 5-minute tail.
+              Narrower assumptions give 87 hours, wider ones 155. Every other number on this
+              certificate is counted, not estimated — and the counting method is in the archive.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <!-- ============================= CLOSE ============================= -->
       <section class="close-band section-rule">
         <div class="wrap wrap--default">
@@ -1173,6 +1672,9 @@
           <div>
             Every claim traceable to the local session archive — asset register, session index,
             transcripts, delivered files and project notes.
+            <div>
+              <span class="pxb"><img src="assets/g/px-mark.png" alt="" /> Built with Perplexity Computer</span>
+            </div>
           </div>
         </div>
       </footer>
