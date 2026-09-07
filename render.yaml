@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: tapas-built-with-computer
+    name: tapas-87-days
     runtime: static
     staticPublishPath: .
     buildCommand: ''
